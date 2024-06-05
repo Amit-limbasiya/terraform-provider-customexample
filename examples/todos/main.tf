@@ -13,12 +13,12 @@ provider "customexample"{
 	baseurl   =  "http://localhost:5019"
 }
 
-resource customexample_add_todo_items "addingtodos"{
-	todo_list=["A","B"]
-}
+# resource customexample_add_todo_items "addingtodos"{
+# 	todo_list=["A","B"]
+# }
 
 # data customexample_todo "todo"{
-
+# 	depends_on = [ customexample_add_todo_items.addingtodos ]
 # }
 
 # output "todolist"{
