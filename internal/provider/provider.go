@@ -108,7 +108,7 @@ func (p *customExampleProvider) Configure(ctx context.Context, req provider.Conf
 	}
 
 	if !config.Baseurl.IsNull() {
-		password = config.Baseurl.ValueString()
+		baseurl = config.Baseurl.ValueString()
 	}
 
 	if username == "" {
