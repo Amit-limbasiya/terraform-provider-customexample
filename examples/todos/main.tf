@@ -1,16 +1,16 @@
-terraform{
-	required_providers{
-		customexample={
-			source = "terraform.registry.io/edu/custom-example"
-			version = "0.1.0"
-		}
-	}
+terraform {
+  required_providers {
+    customexample = {
+      source = "Amit-limbasiya/customexample"
+      version = "1.0.4"
+    }
+  }
 }
 
 provider "customexample"{
 	username  =  "amit"
 	password  =  "abc"
-	baseurl   =  "http://localhost:5019"
+	baseurl   =  "http://localhost:8080"
 }
 
 resource customexample_add_todo_items "addingtodos"{
